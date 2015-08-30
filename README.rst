@@ -37,32 +37,38 @@ The above command will copy and execute execute "/home/myuser/scripts/audit" on 
 
 	remote_copy_and_execute arguments:
 
-		\-\-rcae-timeout=#seconds         to use a timeout.
+		\-\-rcae\-timeout=#seconds         to use a timeout.
 
-		\-\-rcae-omit-empty               Omit printing empty results
+		\-\-rcae\-omit\-empty               Omit printing empty results
 
-		\-\-rcae-at-a-time=#              Split application into given # chunks
+		\-\-rcae\-at\-a\-time=#              Split application into given # chunks
 
-		\-\-rcae-hide-date                Do not show runtime date
+		\-\-rcae\-hide\-date                Do not show runtime date
 
-		\-\-rcae-skip-bad-hosts           Skip bad hosts. Default is to terminate.
+		\-\-rcae\-skip\-bad\-hosts           Skip bad hosts. Default is to terminate.
 
-		\-\-rcae-quiet                    Omit all output except that from the script. Implies hide-date
+		\-\-rcae\-quiet                    Omit all output except that from the script. Implies hide-date
 
-		\-\-rcae-as-user=username         Perform copy and execute as given user. Default is root.
+		\-\-rcae\-as\-user=username         Perform copy and execute as given user. Default is root.
 
-		\-\-rcae-print-on-host-complete   Print right after each host completes execution. Default is to print at end of each set. Assumes rcae-hide-date.
+		\-\-rcae\-print\-on\-host\-complete   Print right after each host completes execution. Default is to print at end of each set. Assumes rcae-hide-date.
 
 
 		\-\-rcae-batch                    Sets defaults [listed below]. Sane defaults for batch
 				                          executions. This directive is evaluated first, so you can override
 				                          the ones that take a paramater.
 
+
 					                        timeout=2
+
 					                        omit-empty
+
 					                        at-a-time=15
+
 					                        hide-date
+
 					                        skip-bad-hosts
+
 
 
 		--rcae-help                     Show this message
