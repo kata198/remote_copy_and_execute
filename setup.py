@@ -13,7 +13,7 @@ if __name__ == '__main__':
         long_description = ''
 
     setup(name='remote_copy_and_execute',
-            version='1.1',
+            version='1.1.1',
             scripts=['remote_copy_and_execute'],
             author='Tim Savannah',
             author_email='kata198@gmail.com',
@@ -23,6 +23,7 @@ if __name__ == '__main__':
             description='Tool to use SSH protocol to copy and execute arbitrary scripts/commands on a list of machines in parallel',
             long_description=long_description,
             license='GPLv3',
+            requires=['python-subprocess2'],
             keywords=['ssh', 'scp', 'remote', 'copy', 'execute', 'shell', 'rcae', 'script', 'host'],
             classifiers=['Development Status :: 5 - Production/Stable',
                          'Programming Language :: Python',
